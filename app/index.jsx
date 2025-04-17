@@ -16,6 +16,10 @@ export default function Index() {
     roteador.push('/cep')
   }
 
+  function abreMacacos() {
+    roteador.push('/macacos')
+  }
+
   return (
     <View>
       <Text>Esnupi</Text>
@@ -23,6 +27,7 @@ export default function Index() {
       <Button title="Vamos pra batata" onPress={vaiPraBatata} />
       <Button title='Lista de afazeres' onPress={abreLista} />
       <Button title='Tela de CEP' onPress={abreCEP} />
+      <Button title='Registro de macacos' onPress={abreMacacos} />
       <Image source={require('../assets/images/chave.jpg')} />
     </View>
   );
